@@ -5,15 +5,35 @@
   --prime-text-color: #757575;
   --link-hover-color: #ffffff;
 }
-/*MAINPAIGE*/
 body {
   font-family: "Roboto", sans-serif;
   color: var(--prime-linktxt-color);
   font-weight: 400;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
-
+/*global styles*/
 ul {
   list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  outline: 2px solid blue;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .logo,
@@ -24,6 +44,14 @@ ul {
 .footer a /*специфічний клас logo чомусь не працює на вимикання підкреслення посилання*/ {
   text-decoration: none;
 }
+
+.footer,
+.hero {
+  background-color: #2f303a;
+  /* background-color: tomato; */
+}
+
+/*HEADER*/
 
 .header .link {
   color: var(--prime-linktxt-color);
@@ -65,7 +93,16 @@ ul {
   color: #188ce8;
 }
 
+/*HERO*/
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero .title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -76,6 +113,9 @@ ul {
 }
 
 .hero .button {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -107,11 +147,21 @@ ul {
   margin: -1px;
 }
 
-.advantages ul li {
-  display: inline; /*заготовка + кращий вигляд*/
+/*advantages*/
+.advantages .list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.advantages .list {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages .title {
+  width: 270px;
+  padding-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -120,11 +170,14 @@ ul {
 }
 
 .advantages .text {
+  width: 270px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--prime-text-color);
 }
+
+/*WHAT WE DO */
 .wwd .title,
 .team .title {
   font-weight: 700;
@@ -132,12 +185,23 @@ ul {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 
-.wwd ul li {
-  display: inline; /*заготовка + кращий вигляд*/
+.wwd .list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
+.wwd .container {
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 94px;
+}
+
+/*TEAM*/
 .team .name {
   font-weight: 500;
   font-size: 16px;
@@ -153,12 +217,11 @@ ul {
   color: var(--prime-text-color);
 }
 
-.footer,
-.hero {
-  background-color: #2f303a;
-  /* background-color: tomato; */
+.team .list {
+  display: flex;
 }
 
+/*FOOTER*/
 .footer .logo-studio {
   color: var(--link-hover-color);
 }

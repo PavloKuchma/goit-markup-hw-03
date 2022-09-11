@@ -41,6 +41,10 @@ ul {
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
+
 .button {
   cursor: pointer;
 }
@@ -310,8 +314,10 @@ ul {
 }
 
 /*PORTFOLIO*/
-.p-main .section {
-  margin-top: 94px;
+
+.p-main .container {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 /*FILTER BUTTONS*/
@@ -345,15 +351,17 @@ ul {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: calc (100% / 3 - 30px);
+  justify-content: space-between;
   padding-left: 0;
   margin-top: 50px;
   gap: 30px;
 }
 
-.portfolio-list .item {
+.portfolio-list .portfolio-sign {
   border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .portfolio-list .title {
@@ -362,11 +370,6 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
-  padding-left: 24px;
-  padding-right: auto;
-  padding-top: 20px;
-  padding-bottom: 54px;
-  margin-bottom: 4px;
 }
 .portfolio-list .text {
   font-size: 16px;
@@ -374,5 +377,5 @@ ul {
   letter-spacing: 0.03em;
   color: var(--prime-text-color);
   text-align: left;
-  padding-left: 24px;
+  margin-top: 4px;
 }

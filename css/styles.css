@@ -4,6 +4,7 @@
   --prime-linktxt-color: #212121;
   --prime-text-color: #757575;
   --link-hover-color: #ffffff;
+  --team-bcg-color: #f5f4fa;
 }
 
 /*global styles*/
@@ -13,6 +14,7 @@ body {
   font-weight: 400;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 0;
 }
 
 *,
@@ -41,16 +43,12 @@ ul {
   padding-left: 0;
 }
 
-img {
-  display: block;
-}
-
 .button {
   cursor: pointer;
 }
 
-.container {
-  /* outline: 2px solid blue; */
+.section {
+  outline: 2px solid blue;
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
@@ -133,7 +131,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 /*HERO*/
-.hero .container {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -195,14 +193,14 @@ img {
   justify-content: space-between;
   padding-left: 0;
 }
-.advantages .container {
+.advantages {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .advantages .title {
   width: 270px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -233,18 +231,30 @@ img {
 
 .wwd .list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
   padding-left: 0;
 }
 
-.wwd .container,
-.team .container {
+.wwd,
+.team {
   padding-bottom: 94px;
 }
 
 /*TEAM*/
-.team .container {
+.team {
   padding-top: 94px;
+  background-color: var(--team-bcg-color);
+}
+
+.team .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team .section {
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .team .name {
@@ -253,7 +263,6 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 30px;
 }
 .team .text {
   font-size: 16px;
@@ -263,16 +272,10 @@ img {
   color: var(--prime-text-color);
 
   margin-top: 10px;
-  padding-bottom: 30px;
-}
-
-.team .list {
-  display: flex;
-  justify-content: space-between;
 }
 
 .team .item {
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -280,7 +283,7 @@ img {
 
 /*FOOTER*/
 
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -315,7 +318,7 @@ img {
 
 /*PORTFOLIO*/
 
-.p-main .container {
+.p-main .section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
